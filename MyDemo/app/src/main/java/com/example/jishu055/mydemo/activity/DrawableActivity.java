@@ -3,7 +3,6 @@ package com.example.jishu055.mydemo.activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,7 +12,7 @@ import com.example.jishu055.mydemo.view.drawable.CircleImageDrawable;
 import com.example.jishu055.mydemo.view.drawable.RoundImageDrawable;
 
 
-public class DrawableActivity extends AppCompatActivity {
+public class DrawableActivity extends BaseActivity {
     Bitmap bitmap;
     ImageView iv;
 
