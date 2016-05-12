@@ -1,13 +1,12 @@
 package com.example.jishu055.mydemo.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.jishu055.mydemo.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.bt_01).setOnClickListener(this);
         findViewById(R.id.bt_02).setOnClickListener(this);
+        findViewById(R.id.bt_03_a).setOnClickListener(this);
+        findViewById(R.id.bt_03_b).setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_02://优雅的根据状态改变背景
                 startActivity(new Intent(this,ListItemActivity.class));
+                break;
+            case R.id.bt_03_a://通过android:theme 布局优化前
+                startActivity(new Intent(this,OptimizationActivity_01.class));
+                break;
+            case R.id.bt_03_b://通过android:theme 布局优化后
+                startActivity(new Intent(this,OptimizationActivity_02.class));
                 break;
         }
     }

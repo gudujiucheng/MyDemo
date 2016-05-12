@@ -24,7 +24,28 @@
             android:id="@+id/bt_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="item状态" />
+            android:text="优雅的改变item状态" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_03_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="布局优化前效果" />
+
+            <Button
+                android:id="@+id/bt_03_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="布局优化后效果" />
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
 

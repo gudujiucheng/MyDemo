@@ -16,7 +16,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.DrawableActivity" />
-        <activity android:name=".activity.ListItemActivity"></activity>
+        <activity android:name=".activity.ListItemActivity" />
+        <activity android:name=".activity.OptimizationActivity_01" />
+        <!-- 通过设置主题设置背景 优化显示效果 -->
+        <activity
+            android:name=".activity.OptimizationActivity_02"
+            android:theme="@style/Theme.Default.NoActionBar" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
