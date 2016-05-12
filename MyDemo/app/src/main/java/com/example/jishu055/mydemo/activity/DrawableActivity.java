@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.jishu055.mydemo.R;
-import com.example.jishu055.mydemo.drawable.CircleImageDrawable;
-import com.example.jishu055.mydemo.drawable.RoundImageDrawable;
+import com.example.jishu055.mydemo.view.drawable.CircleImageDrawable;
+import com.example.jishu055.mydemo.view.drawable.RoundImageDrawable;
 
 
 public class DrawableActivity extends AppCompatActivity {
@@ -40,7 +40,7 @@ public class DrawableActivity extends AppCompatActivity {
                     ((Button) v).setText("可以设置任何控件的背景！");
                 } else {
                     v.setBackgroundDrawable(null);
-                    ((Button) v).setText("change");
+                    ((Button) v).setText("点击切换");
                 }
                 change = !change;
 

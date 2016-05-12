@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zhangcan="http://schemas.android.com/apk/res-auto">
+
+    <item android:drawable="@android:color/darker_gray" zhangcan:state_message_readed="true"></item>
+
+</selector>

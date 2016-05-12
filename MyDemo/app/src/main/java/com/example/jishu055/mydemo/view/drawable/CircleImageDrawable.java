@@ -1,4 +1,4 @@
-package com.example.jishu055.mydemo.drawable;
+package com.example.jishu055.mydemo.view.drawable;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;

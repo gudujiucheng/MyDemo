@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.bt_01).setOnClickListener(this);
+        findViewById(R.id.bt_02).setOnClickListener(this);
     }
 
     @Override
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.bt_01://圆角背景
                 startActivity(new Intent(this,DrawableActivity.class));
+                break;
+            case R.id.bt_02://优雅的根据状态改变背景
+                startActivity(new Intent(this,ListItemActivity.class));
                 break;
         }
     }
