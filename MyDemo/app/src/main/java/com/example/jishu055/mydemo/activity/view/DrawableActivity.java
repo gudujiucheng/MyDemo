@@ -1,4 +1,4 @@
-package com.example.jishu055.mydemo.activity;
+package com.example.jishu055.mydemo.activity.view;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.jishu055.mydemo.R;
+import com.example.jishu055.mydemo.activity.BaseActivity;
 import com.example.jishu055.mydemo.view.drawable.CircleImageDrawable;
 import com.example.jishu055.mydemo.view.drawable.RoundImageDrawable;
 

@@ -1,4 +1,4 @@
-package com.example.jishu055.mydemo.activity;
+package com.example.jishu055.mydemo.activity.view;
 
 import android.app.ListActivity;
 import android.os.Bundle;

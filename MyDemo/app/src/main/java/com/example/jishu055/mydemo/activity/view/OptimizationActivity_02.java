@@ -1,8 +1,9 @@
-package com.example.jishu055.mydemo.activity;
+package com.example.jishu055.mydemo.activity.view;
 
 import android.os.Bundle;
 
 import com.example.jishu055.mydemo.R;
+import com.example.jishu055.mydemo.activity.BaseActivity;
 
 /**
  * 感觉速度上面没什么区别，只是布局上面精简了，但是主题设置增多了内容

@@ -5,6 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.jishu055.mydemo.R;
+import com.example.jishu055.mydemo.activity.json.JsonActivity;
+import com.example.jishu055.mydemo.activity.view.DrawableActivity;
+import com.example.jishu055.mydemo.activity.view.ListItemActivity;
+import com.example.jishu055.mydemo.activity.view.OptimizationActivity_01;
+import com.example.jishu055.mydemo.activity.view.OptimizationActivity_02;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -16,6 +21,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.bt_02).setOnClickListener(this);
         findViewById(R.id.bt_03_a).setOnClickListener(this);
         findViewById(R.id.bt_03_b).setOnClickListener(this);
+        findViewById(R.id.bt_04).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +38,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.bt_03_b://通过android:theme 布局优化后
                 startActivity(new Intent(this,OptimizationActivity_02.class));
+                break;
+            case R.id.bt_04://json和bean的转换
+                startActivity(new Intent(this,JsonActivity.class));
                 break;
         }
     }

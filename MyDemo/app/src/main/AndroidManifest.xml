@@ -15,17 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.DrawableActivity" />
-        <activity android:name=".activity.ListItemActivity" />
-        <activity android:name=".activity.OptimizationActivity_01" />
+        <activity android:name=".activity.view.DrawableActivity" />
+        <activity android:name=".activity.view.ListItemActivity" />
+        <activity android:name=".activity.view.OptimizationActivity_01" />
         <!-- 通过设置主题设置背景 优化显示效果 -->
         <activity
-            android:name=".activity.OptimizationActivity_02"
+            android:name=".activity.view.OptimizationActivity_02"
             android:theme="@style/Theme.Default.NoActionBar" />
         <activity
             android:name=".activity.BaseActivity"
             android:label="@string/title_activity_base"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.json.JsonActivity"></activity>
     </application>
 
 </manifest>
