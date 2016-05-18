@@ -22,4 +22,10 @@
         android:onClick="cartTOJson"
         android:text="提交订单转化" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testExtendsBean"
+        android:text="测试继承解析" />
+
 </LinearLayout>

@@ -7,6 +7,8 @@ import android.view.View;
 import com.alibaba.fastjson.JSON;
 import com.example.jishu055.mydemo.R;
 import com.example.jishu055.mydemo.activity.BaseActivity;
+import com.example.jishu055.mydemo.activity.json.cart.AddressListResponse;
+import com.example.jishu055.mydemo.activity.json.cart.AddressListResponseTest;
 import com.example.jishu055.mydemo.activity.json.cart.ListItemInfo;
 import com.example.jishu055.mydemo.activity.json.cart.ListItemInfo02;
 import com.example.jishu055.mydemo.activity.json.cart.ListItemInfo03;
@@ -112,6 +114,21 @@ public class JsonActivity extends BaseActivity {
 
         String jsonString = JSON.toJSONString(post);
         Log.e("Test", "提交订单拼接json:" + jsonString);
+    }
+
+    public void testExtendsBean(View v){
+//        有两个收货地址
+        String response = "{\"status\":200,\"message\":\"Success!\",\"code\":\"0\",\"suggestMsg\":\"\",\"timestamp\":\"1463362355046\",\"data\":{\"num\":2,\"list\":[{\"id\":10790,\"name\":\"test\",\"phone\":\"\",\"tel\":\"15685465465\",\"province\":2,\"city\":52,\"district\":503,\"address\":\"12123123123123\",\"zip\":\"000000\",\"def\":0,\"provinceCityDistict\":\"北京北京朝阳区\"},{\"id\":10791,\"name\":\"tesrterwer\",\"phone\":\"\",\"tel\":\"15312341123\",\"province\":9,\"city\":128,\"district\":0,\"address\":\"123123123\",\"zip\":\"000000\",\"def\":1,\"provinceCityDistict\":\"海南乐东\"}]}}\n";
+       //用泛型
+        AddressListResponse resp = JSON.parseObject(response, AddressListResponse.class);
+        Log.e("Test",resp.getData().getList().size()+"");
+        Log.e("Test",resp.getData().getNum()+" num");
+
+
+        //不用泛型也行，但是明显比较麻烦，也不美观
+        AddressListResponseTest resp2 = JSON.parseObject(response, AddressListResponseTest.class);
+        Log.e("Test",resp2.getData().getList().size()+"");
+        Log.e("Test",resp2.getData().getNum()+" num");
     }
 
 

@@ -10,6 +10,7 @@ import com.example.jishu055.mydemo.activity.view.DrawableActivity;
 import com.example.jishu055.mydemo.activity.view.ListItemActivity;
 import com.example.jishu055.mydemo.activity.view.OptimizationActivity_01;
 import com.example.jishu055.mydemo.activity.view.OptimizationActivity_02;
+import com.example.jishu055.mydemo.animation.LayoutAnimationActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -22,6 +23,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.bt_03_a).setOnClickListener(this);
         findViewById(R.id.bt_03_b).setOnClickListener(this);
         findViewById(R.id.bt_04).setOnClickListener(this);
+        findViewById(R.id.bt_05).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +43,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.bt_04://json和bean的转换
                 startActivity(new Intent(this,JsonActivity.class));
+            case R.id.bt_05://布局动画
+                startActivity(new Intent(this,LayoutAnimationActivity.class));
                 break;
         }
     }

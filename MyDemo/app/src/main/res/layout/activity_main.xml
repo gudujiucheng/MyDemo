@@ -18,12 +18,14 @@
             android:id="@+id/bt_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="圆形" />
 
         <Button
             android:id="@+id/bt_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="优雅的改变item状态" />
 
         <LinearLayout
@@ -35,12 +37,14 @@
                 android:id="@+id/bt_03_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="布局优化前效果" />
 
             <Button
                 android:id="@+id/bt_03_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="布局优化后效果" />
 
         </LinearLayout>
@@ -49,7 +53,15 @@
             android:id="@+id/bt_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="bean和json的转换" />
+
+        <Button
+            android:id="@+id/bt_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="布局动画" />
 
 
     </LinearLayout>
