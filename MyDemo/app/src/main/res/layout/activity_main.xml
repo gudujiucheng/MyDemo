@@ -63,6 +63,13 @@
             android:layout_margin="10dp"
             android:text="布局动画" />
 
+        <Button
+            android:id="@+id/bt_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="发射广播（测试重写调用）" />
+
 
     </LinearLayout>
 
