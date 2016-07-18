@@ -28,7 +28,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.json.JsonActivity" />
         <activity android:name=".animation.LayoutAnimationActivity" />
-        <activity android:name=".activity.WebActivity"></activity>
+        <activity android:name=".activity.WebActivity" />
+        <activity android:name=".activity.designpattern.ObserverPatternActivity"></activity>
     </application>
 
 </manifest>

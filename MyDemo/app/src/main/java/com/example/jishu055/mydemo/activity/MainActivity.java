@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.jishu055.mydemo.R;
+import com.example.jishu055.mydemo.activity.designpattern.ObserverPatternActivity;
 import com.example.jishu055.mydemo.activity.json.JsonActivity;
 import com.example.jishu055.mydemo.activity.view.DrawableActivity;
 import com.example.jishu055.mydemo.activity.view.ListItemActivity;
@@ -26,6 +27,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.bt_04).setOnClickListener(this);
         findViewById(R.id.bt_05).setOnClickListener(this);
         findViewById(R.id.bt_06).setOnClickListener(this);
+        findViewById(R.id.bt_07).setOnClickListener(this);
     }
 
     @Override
@@ -48,8 +50,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.bt_05://布局动画
                 startActivity(new Intent(this,LayoutAnimationActivity.class));
                 break;
-            case R.id.bt_06://布局动画
+            case R.id.bt_06://重写 发广播调用父类 测试子类重写
                 sendBroadcast(new Intent("ACTION_TEST"));
+            case R.id.bt_07://观察者模式
+                startActivity(new Intent(this,ObserverPatternActivity.class));
                 break;
 
         }
