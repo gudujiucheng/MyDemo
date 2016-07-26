@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jishu055.mydemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,7 +33,10 @@
         <activity android:name=".activity.json.JsonActivity" />
         <activity android:name=".animation.LayoutAnimationActivity" />
         <activity android:name=".activity.WebActivity" />
-        <activity android:name=".activity.designpattern.ObserverPatternActivity"></activity>
+        <activity android:name=".activity.designpattern.ObserverPatternActivity" />
+        <activity android:name=".activity.java.enumtest.EnumActivity" />
+        <activity android:name=".activity.runnable.ThreadActivity" />
+        <activity android:name=".activity.update.UpdateActivity"></activity>
     </application>
 
 </manifest>

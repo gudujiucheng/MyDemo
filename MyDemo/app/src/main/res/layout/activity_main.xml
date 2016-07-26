@@ -77,6 +77,25 @@
             android:layout_margin="10dp"
             android:text="观察者模式" />
 
+        <Button
+            android:id="@+id/bt_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="枚举" />
+
+        <Button
+            android:id="@+id/bt_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="wait和sleep区别" />
+        <Button
+            android:id="@+id/bt_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="app更新" />
 
     </LinearLayout>
 

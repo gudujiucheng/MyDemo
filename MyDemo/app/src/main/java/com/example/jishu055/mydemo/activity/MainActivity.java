@@ -7,7 +7,10 @@ import android.widget.Toast;
 
 import com.example.jishu055.mydemo.R;
 import com.example.jishu055.mydemo.activity.designpattern.ObserverPatternActivity;
+import com.example.jishu055.mydemo.activity.java.enumtest.EnumActivity;
 import com.example.jishu055.mydemo.activity.json.JsonActivity;
+import com.example.jishu055.mydemo.activity.runnable.ThreadActivity;
+import com.example.jishu055.mydemo.activity.update.UpdateActivity;
 import com.example.jishu055.mydemo.activity.view.DrawableActivity;
 import com.example.jishu055.mydemo.activity.view.ListItemActivity;
 import com.example.jishu055.mydemo.activity.view.OptimizationActivity_01;
@@ -28,6 +31,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.bt_05).setOnClickListener(this);
         findViewById(R.id.bt_06).setOnClickListener(this);
         findViewById(R.id.bt_07).setOnClickListener(this);
+        findViewById(R.id.bt_08).setOnClickListener(this);
+        findViewById(R.id.bt_09).setOnClickListener(this);
+        findViewById(R.id.bt_10).setOnClickListener(this);
     }
 
     @Override
@@ -52,8 +58,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.bt_06://重写 发广播调用父类 测试子类重写
                 sendBroadcast(new Intent("ACTION_TEST"));
+                break;
             case R.id.bt_07://观察者模式
                 startActivity(new Intent(this,ObserverPatternActivity.class));
+                break;
+            case R.id.bt_08://枚举
+                startActivity(new Intent(this,EnumActivity.class));
+                break;
+            case R.id.bt_09://wait 和 sleep区别
+                startActivity(new Intent(this,ThreadActivity.class));
+                break;
+            case R.id.bt_10://测试更新
+                startActivity(new Intent(this,UpdateActivity.class));
                 break;
 
         }
