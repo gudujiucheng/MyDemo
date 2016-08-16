@@ -9,10 +9,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".activity.MainActivity">
 
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="各种类型的shape" />
+
+        <Button
+            android:id="@+id/bt_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="自定义软键盘和密码输入框" />
+
+        <Button
+            android:id="@+id/bt_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="自定义view" />
 
         <Button
             android:id="@+id/bt_01"
@@ -90,6 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="wait和sleep区别" />
+
         <Button
             android:id="@+id/bt_10"
             android:layout_width="wrap_content"

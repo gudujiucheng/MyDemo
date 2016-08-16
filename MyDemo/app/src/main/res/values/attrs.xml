@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mtitleText" format="string" />
+    <attr name="mtitleTextColor" format="color" />
+    <attr name="mtitleTextSize" format="dimension" />
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="mtitleText" />
+        <attr name="mtitleTextColor" />
+        <attr name="mtitleTextSize" />
+    </declare-styleable>
+
+    <attr name="firstColor" format="color" />
+    <attr name="secondColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="dotCount" format="integer" />
+    <attr name="splitSize" format="integer" />
+    <attr name="bg" format="reference" />
+
+    <declare-styleable name="CustomVolumControlBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="dotCount" />
+        <attr name="splitSize" />
+        <attr name="bg" />
+    </declare-styleable>
+
+</resources>

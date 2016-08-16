@@ -3,8 +3,8 @@
     package="com.example.jishu055.mydemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +36,10 @@
         <activity android:name=".activity.designpattern.ObserverPatternActivity" />
         <activity android:name=".activity.java.enumtest.EnumActivity" />
         <activity android:name=".activity.runnable.ThreadActivity" />
-        <activity android:name=".activity.update.UpdateActivity"></activity>
+        <activity android:name=".activity.update.UpdateActivity" />
+        <activity android:name=".activity.view.customview.CustomViewActivity" />
+        <activity android:name=".activity.view.keyboard.KeyBoardActivity" />
+        <activity android:name=".activity.view.shape.ShapeActivity"></activity>
     </application>
 
 </manifest>

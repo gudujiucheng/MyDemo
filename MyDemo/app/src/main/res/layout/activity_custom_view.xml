@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jishu055.mydemo.activity.view.customview.CustomViewActivity">
+
+    <com.example.jishu055.mydemo.activity.view.customview.CustomTitleView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        app:mtitleText="哈哈哈哈"
+        app:mtitleTextColor="@android:color/holo_red_dark"
+        app:mtitleTextSize="18sp" />
+
+    <!--   <com.example.jishu055.mydemo.activity.view.customview.PaintAndCanvas
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />-->
+
+
+    <com.example.jishu055.mydemo.activity.view.customview.CustomVolumControlBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:bg="@mipmap/ic_launcher"
+        app:circleWidth="5dp"
+        app:dotCount="20"
+        app:firstColor="@android:color/black"
+        app:secondColor="@android:color/holo_red_dark"
+        app:splitSize="10" />
+
+    <com.example.jishu055.mydemo.activity.view.canvas.MyCanvas2
+        android:id="@+id/myview"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
